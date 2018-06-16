@@ -9,7 +9,7 @@ namespace ProjectIDEAModel
         {
             IdeaRemote ideaRemote = new IdeaRemote();
 
-            foreach(var item in ideaRemote.GetItemsAsync().Result)
+            foreach (var item in ideaRemote.GetItemsAsync().Result)
             {
                 Console.WriteLine("{0} {1}", item.Id, item.ArtistName);
             }
