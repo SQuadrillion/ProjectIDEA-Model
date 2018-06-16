@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ProjectIDEA_Model
+namespace ProjectIDEAModel
 {
     class Program
     {
