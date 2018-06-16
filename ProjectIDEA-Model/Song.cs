@@ -7,5 +7,6 @@ namespace ProjectIDEAModel
         public string SongName { get; set; }
         public string ArtistName { get; set; }
         public string ArtWork { get; set; }
+        public string Url { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace ProjectIDEAModel
 {
@@ -6,7 +7,12 @@ namespace ProjectIDEAModel
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IdeaRemote ideaRemote = new IdeaRemote();
+
+            foreach(var item in ideaRemote.GetItemsAsync().Result)
+            {
+                Console.WriteLine("{0} {1}", item.Id, item.ArtistName);
+            }
         }
     }
 }
